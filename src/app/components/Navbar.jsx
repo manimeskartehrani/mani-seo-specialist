@@ -33,11 +33,11 @@ const Navbar = () => {
           >
             Mani.
           </Link>
-          <p className='text-2xl md:text-xl text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 font-semibold mt-5 '>
+          <p className='xl:text-xl md:block hidden text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 font-semibold mt-5 '>
             7783610725
           </p>{' '}
           {''}
-          <p className='text-2xl md:text-xl text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 ml-2 mt-5'>
+          <p className='xl:text-xl md:block hidden text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 ml-2 mt-5'>
             mani.tehrani.work@gmail.com
           </p>
         </div>

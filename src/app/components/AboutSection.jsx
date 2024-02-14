@@ -9,9 +9,11 @@ const TAB_DATA = [
     id: 'skills',
     content: (
       <ul className='list-disc pl-2'>
-        <li>On-Page SEO</li>
+        <li>Semantic SEO</li>
         <li>Keyword Clustring</li>
+        <li>Entity Optimization</li>
         <li>Technical SEO</li>
+        <li>Backlink Audit</li>
         <li>JavaScript</li>
         <li>Python</li>
         <li>SQL</li>
@@ -19,11 +21,42 @@ const TAB_DATA = [
     ),
   },
   {
-    title: 'Works',
-    id: 'works',
+    title: 'Experience',
+    id: 'experience',
     content: (
       <ul className='list-disc pl-2'>
-        <li>Python</li>
+        <li>
+          Conducted keyword clustering and semantic SEO strategies, by focusing
+          on contextual understanding, natural language processing, entity
+          recognition, and structured data markup, ensuring that content aligns
+          with user intent and delivers more accurate and relevant search
+          results.
+        </li>
+        <br />
+        <li>
+          Collaborated closely with the content team to implement on-page SEO
+          techniques for published content, with a specific emphasis on entity
+          optimization strategies.
+        </li>
+        <br />
+        <li>
+          Performed comprehensive backlink analysis to evaluate the quality,
+          relevance, and authority of inbound links, identifying opportunities
+          for optimization and developing strategies to enhance the overall
+          backlink profile.
+        </li>
+        <br />
+        <li>
+          Monitored and Fixed technical issues found on Google search console,
+          Ahrefs and Screaming Frog crawl on an ongoing basis result in 10%
+          increase.
+        </li>
+        <br />
+        <li>
+          Implemented a automated page performance report using python library
+          such as Panda, NumPy, Streamlit and GA4 and GSC API to provide
+          actionable data-driven recommendation monthly.
+        </li>
       </ul>
     ),
   },
@@ -54,6 +87,13 @@ const TAB_DATA = [
     content: (
       <ul className='list-disc pl-2'>
         <li>
+          Google Analytics Individual Qualification
+          <br /> Google Digital Academy
+          <br />
+          (Skillshop) Issued Jun 2023 · Expires Jun 2024 <br />
+          Credential ID 156598959 <br /> <br />
+        </li>
+        <li>
           Certified Digital Marketing Professional <br /> Digital Marketing
           Institute <br />
           Issued Jun 2022 <br />
@@ -81,14 +121,14 @@ const AboutSection = () => {
 
   return (
     <section className='text-white' id='about'>
-      <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-3 xl:gap-16 sm:py-16 xl:px-16'>
+      <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-3 xl:gap-16 xl:px-16 xl:py-0 sm:py-16 '>
         <Image
           src='/images/SEO-Specialist.png'
           width={800}
-          height={800}
+          height={1200}
           alt='SEO Specialist'
         />
-        <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
+        <div className='mt-0 py-0 md:mt-24 text-left flex flex-col h-full'>
           <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
           <p className='text-base lg:text-lg'>
             I am Mani an SEO specialist With over 6 years of experience in SEO
@@ -115,6 +155,13 @@ const AboutSection = () => {
             >
               {' '}
               Skills{' '}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange('experience')}
+              active={tab === 'experience'}
+            >
+              {' '}
+              Experience{' '}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange('education')}
